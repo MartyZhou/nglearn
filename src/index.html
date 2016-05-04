@@ -1,0 +1,14 @@
+<html ng-app="phonecat">
+  <head>
+    <title>nglearn</title>
+    <script src="../lib/angular.js"></script>
+    <script src="./phone/phoneController.js"></script>
+  </head>
+  <body ng-controller="PhoneController">
+    <ul>
+      <li ng-repeat="phone in phones">
+	<span>{{phone.name}}</span>
+      </li>
+    </ul>
+  </body>
+</html>
