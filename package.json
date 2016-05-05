@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/MartyZhou/nglearn#readme",
   "devDependencies": {
+    "definitely-typed-angular": "^1.0.1",
+    "definitely-typed-jquery": "^1.0.0",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-connect": "^1.0.2",

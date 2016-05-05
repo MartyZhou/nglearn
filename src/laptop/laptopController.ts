@@ -1,7 +1,11 @@
-function greeter(person: string) {
-    return "Hello, " + person;
+/// <reference path="../../node_modules/definitely-typed-angular/angular.d.ts" />
+import angular = require('angular');
+
+class LaptopController {
+    static $inject = ['$scope'];
+
+    constructor($scope: angular.IScope){
+    }
 }
 
-var user = "Jane User";
-
-document.body.innerHTML = greeter(user);
+export = LaptopController;
