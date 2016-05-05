@@ -1,0 +1,25 @@
+{
+  "name": "nglearn",
+  "version": "1.0.0",
+  "description": "Ng Learn",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartyZhou/nglearn.git"
+  },
+  "author": "Marty Zhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartyZhou/nglearn/issues"
+  },
+  "homepage": "https://github.com/MartyZhou/nglearn#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "ntypescript": "^1.201605042206.1",
+    "typescript": "^1.8.10"
+  }
+}
