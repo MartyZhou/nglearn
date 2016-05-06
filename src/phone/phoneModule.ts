@@ -1,7 +1,9 @@
 /// <reference path="../../node_modules/definitely-typed-angular/angular.d.ts" />
+/// <amd-dependency path="text!../phone/phone.html" />
 
 import angular = require('angular');
 import phoneController = require('../phone/phoneController');
+var phoneTemplate = require('text!../phone/phone.html');
 
 export = angular.module('phone', [])
     .directive('mzPhoneList', () => {
@@ -10,7 +12,7 @@ export = angular.module('phone', [])
 	    controller: 'phoneController',
 	    controllerAs: 'ctrl',
 	    bindToController: true,
-	    templateUrl: '../phone/phone.html'
+	    template: phoneTemplate
 	};
     })
     .controller('phoneController', phoneController);
