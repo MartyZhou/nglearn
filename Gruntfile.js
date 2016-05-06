@@ -25,5 +25,5 @@ module.exports = function(grunt) {
     });
  
     grunt.registerTask('default', ['ntypescript']);
-    grunt.registerTask('dev', ['connect', 'watch']);
+    grunt.registerTask('dev', ['ntypescript', 'connect', 'watch']);
 };
