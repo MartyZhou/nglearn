@@ -2,6 +2,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('ntypescript');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-karma');
     
     grunt.initConfig({
         ntypescript: {
@@ -21,6 +22,16 @@ module.exports = function(grunt) {
 	},
 
 	watch: {
+	},
+
+	karma: {
+	    build: {
+		configFile: 'karma.conf.js',
+		browsers: ['PhantomJS']
+	    },
+	    debug: {
+		configFile: 'karma.conf.js'
+	    }
 	}
     });
  
