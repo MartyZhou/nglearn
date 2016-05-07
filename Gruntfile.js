@@ -37,4 +37,5 @@ module.exports = function(grunt) {
  
     grunt.registerTask('default', ['ntypescript']);
     grunt.registerTask('dev', ['ntypescript', 'connect', 'watch']);
+    grunt.registerTask('unit', ['ntypescript', 'karma:debug']);
 };
