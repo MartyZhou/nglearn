@@ -1,10 +1,12 @@
-/// <amd-dependency path="text!./post/postTemplate.html" />
+/// <amd-dependency path="text!./post/postBrief.html" name="postBriefTemplate" />
+/// <amd-dependency path="text!./post/postTemplate.html" name="postTemplate" />
 
 import angular = require('angular');
 import wordpressHttp = require('./services/wordPressHttp');
 import postController = require('./post/postController');
 
-var postTemplate = require('text!./post/postTemplate.html');
+var postTemplate;
+var postBriefTemplate;
 
 var wpModule = angular.module('wordpressModule', [])
     .service('wordpressHttp', wordpressHttp)
@@ -16,6 +18,15 @@ var wpModule = angular.module('wordpressModule', [])
 	    controllerAs: 'ctrl',
 	    bindToController: true,
 	    template: postTemplate
+	};
+    })
+    .directive('wpPost', () => {
+	return {
+	    restrict: 'E',
+	    scope: {
+		post: '='
+	    },
+	    template: postBriefTemplate
 	};
     });
 
