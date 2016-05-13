@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <wp-post post="ctrl.post" />
+  </div>
+  <div>
+    <ul>
+      <li ng-repeat="comment in ctrl.comments">
+	<wp-comment comment="comment" />
+      </li>
+    </ul>
+  </div>
+</div>

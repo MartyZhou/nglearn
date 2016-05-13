@@ -5,11 +5,11 @@ class PostController{
 
     private posts: PostInterface.IPost[];
     
-    constructor(private wpHttp: any){
-	wpHttp.getPosts().then((data) => {
+    constructor(private wpHttp: PostInterface.IWordPressHttp){
+	wpHttp.getAllPosts().then((data) => {
 	    this.posts = data;
 	});
-    }    
+    }
 }
 
 export = PostController;
